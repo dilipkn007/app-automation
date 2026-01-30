@@ -1,0 +1,2764 @@
+2026-01-23T07:28:08.129Z CLI info     Config : {"userName":"[REDACTED]","accessKey":"[REDACTED]","projectName":"BrowserStack Samples","buildName":"browserstack build","buildIdentifier":"#${BUILD_NUMBER}","framework":"pytest","app":"./WikipediaSample.apk","platforms":[{"deviceName":"Samsung Galaxy S23 Ultra","osVersion":"13.0","platformName":"android"}],"parallelsPerPlatform":1,"browserstackLocal":true,"source":"pytest-appium-browserstack:sample-sdk:v1.0","debug":false,"networkLogs":false,"consoleLogs":"errors"}
+2026-01-23T07:28:08.135Z CLI info     Should start debug utility: undefined
+2026-01-23T07:28:08.166Z CLI info [testhub:module]  [dilipk_JLRgqw]   [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Starting testhub from 5162:0
+2026-01-23T07:28:08.166Z CLI info  [dilipk_JLRgqw]   [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  [PRODUCTION] Making POST request to https://sdk.browserstack.com
+2026-01-23T07:28:08.167Z CLI info  [dilipk_JLRgqw]   [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  [PRODUCTION] Making GET request to https://hub.browserstack.com
+2026-01-23T07:28:08.967Z CLI info  [dilipk_JLRgqw]   [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  [PRODUCTION] Making GET request to https://hub-aps.browserstack.com
+2026-01-23T07:28:08.967Z CLI info  [dilipk_JLRgqw]   [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  [PRODUCTION] Making GET request to https://hub-euw.browserstack.com
+2026-01-23T07:28:08.968Z CLI info  [dilipk_JLRgqw]   [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  [PRODUCTION] Making GET request to https://hub-apse.browserstack.com
+2026-01-23T07:28:09.249Z CLI info [testhub:module]  [dilipk_JLRgqw]   [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  startBuild: response=9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1
+2026-01-23T07:28:09.251Z CLI info  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  [PRODUCTION] Making POST request to https://api.browserstack.com
+2026-01-23T07:28:09.781Z CLI info  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  [PRODUCTION] Making GET request to https://api.browserstack.com
+2026-01-23T07:28:10.239Z CLI error  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  error invoking callback for eventName: {}
+2026-01-23T07:28:10.239Z CLI error  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Error: invalid percyToken=null
+    at /snapshot/browserstack-binary/cli/dist/index.js
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2026-01-23T07:28:21.370Z CLI info [appautomate:service]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Using app: ./WikipediaSample.apk
+2026-01-23T07:28:21.370Z CLI info [appautomate:service]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Uploading app /Users/dilipkn/Documents/software_dev/pytest-appium-app-browserstack/android/WikipediaSample.apk  to browserstack
+2026-01-23T07:28:21.403Z CLI info  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  [PRODUCTION] Making POST request to https://api.browserstack.com
+2026-01-23T07:28:55.902Z CLI info [appautomate:service]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  App upload completed: {"app_url":"bs://1062ecd56cea48c6ff286325fa3cf230784bc155"}
+2026-01-23T07:28:56.700Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'HookRunStarted',
+  hook_run: {
+    type: 'hook',
+    hook_type: 'BEFORE_EACH',
+    framework: 'pytest',
+    uuid: '87f13d1a-0daa-41ba-bce5-a6061fd33b5a',
+    name: 'setup',
+    result: 'pending',
+    test_run_id: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+    body: { lang: 'python', code: null },
+    scope: 'test_example',
+    custom_metadata: {},
+    tags: [],
+    scopes: [ 'TestSample' ],
+    file_name: 'bstack_sample.py',
+    location: 'bstack_sample.py',
+    vc_filepath: 'bstack_sample.py',
+    started_at: '2026-01-23T07:28:56.698Z'
+  },
+  logs: []
+} to 5162:0
+2026-01-23T07:28:56.709Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T07:28:56.540Z',
+      uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      kind: 'TEST_LOG',
+      message: '2026-01-23T07:28:56Z [bstack1ll1ll11lll_opy_][INFO] - Remote Server Address being passed as : https://hub.browserstack.com/wd/hub',
+      level: 'INFO',
+      test_run_uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6'
+    }
+  ]
+} to 5162:0
+2026-01-23T07:28:56.710Z CLI info [sdk:service]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Driver initialized as primary driver: platformIndex=0
+2026-01-23T07:28:56.713Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T07:28:56.540Z',
+      uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      kind: 'TEST_LOG',
+      message: '2026-01-23T07:28:56Z [bstack1ll1ll11lll_opy_][INFO] - Completed setup!',
+      level: 'INFO',
+      test_run_uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6'
+    }
+  ]
+} to 5162:0
+2026-01-23T07:28:56.716Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T07:28:56.540Z',
+      uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      kind: 'TEST_LOG',
+      message: "2026-01-23T07:28:56Z [bstack1ll1ll11lll_opy_][INFO] - driver.__init__ platform_index=0: args=() kwargs={'command_executor': 'https://hub-aps.browserstack.com/wd/hub', 'options': <appium.options.common.base.AppiumOptions object at 0x103c07040>, 'desired_capabilities': None, 'keep_alive': True, 'file_detector': None}",
+      level: 'INFO',
+      test_run_uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6'
+    }
+  ]
+} to 5162:0
+2026-01-23T07:28:56.718Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T07:28:56.540Z',
+      uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      kind: 'TEST_LOG',
+      message: '2026-01-23T07:28:56Z [bstack1ll1ll11lll_opy_][WARNING] - hub_url=https://hub-aps.browserstack.com/wd/hub',
+      level: 'INFO',
+      test_run_uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6'
+    }
+  ]
+} to 5162:0
+2026-01-23T07:28:56.720Z CLI info [local:module]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  initSession: localIdentifier=Jan_23_1258_Dilips-MacBook-Pro.local_iiia pid=5184
+2026-01-23T07:28:57.268Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Processing batch event [
+  {
+    event_type: 'HookRunStarted',
+    hook_run: {
+      type: 'hook',
+      hook_type: 'BEFORE_EACH',
+      framework: 'pytest',
+      uuid: '87f13d1a-0daa-41ba-bce5-a6061fd33b5a',
+      name: 'setup',
+      result: 'pending',
+      test_run_id: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      body: [Object],
+      scope: 'test_example',
+      custom_metadata: {},
+      tags: [],
+      scopes: [Array],
+      file_name: 'bstack_sample.py',
+      location: 'bstack_sample.py',
+      vc_filepath: 'bstack_sample.py',
+      started_at: '2026-01-23T07:28:56.698Z'
+    },
+    logs: []
+  },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] }
+] to 5162:0
+2026-01-23T07:28:57.270Z CLI info  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2026-01-23T07:29:31.102Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T07:28:56.540Z',
+      uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      kind: 'TEST_LOG',
+      message: 'Direct connect capabilities from server were:\n' +
+        "directConnectProtocol: '' directConnectHost: '' directConnectPort: '' directConnectPath: ''",
+      level: 'ERROR',
+      test_run_uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6'
+    }
+  ]
+} to 5162:0
+2026-01-23T07:29:31.106Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'HookRunFinished',
+  hook_run: {
+    type: 'hook',
+    hook_type: 'BEFORE_EACH',
+    framework: 'pytest',
+    uuid: '87f13d1a-0daa-41ba-bce5-a6061fd33b5a',
+    name: 'setup',
+    result: 'passed',
+    test_run_id: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+    body: { lang: 'python', code: null },
+    scope: 'test_example',
+    custom_metadata: {},
+    tags: [],
+    scopes: [ 'TestSample' ],
+    file_name: 'bstack_sample.py',
+    location: 'bstack_sample.py',
+    vc_filepath: 'bstack_sample.py',
+    started_at: '2026-01-23T07:28:56.698Z',
+    finished_at: '2026-01-23T07:29:31.103Z'
+  },
+  logs: []
+} to 5162:0
+2026-01-23T07:29:31.283Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Processing batch event [
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  {
+    event_type: 'HookRunFinished',
+    hook_run: {
+      type: 'hook',
+      hook_type: 'BEFORE_EACH',
+      framework: 'pytest',
+      uuid: '87f13d1a-0daa-41ba-bce5-a6061fd33b5a',
+      name: 'setup',
+      result: 'passed',
+      test_run_id: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      body: [Object],
+      scope: 'test_example',
+      custom_metadata: {},
+      tags: [],
+      scopes: [Array],
+      file_name: 'bstack_sample.py',
+      location: 'bstack_sample.py',
+      vc_filepath: 'bstack_sample.py',
+      started_at: '2026-01-23T07:28:56.698Z',
+      finished_at: '2026-01-23T07:29:31.103Z'
+    },
+    logs: []
+  }
+] to 5162:0
+2026-01-23T07:29:31.283Z CLI info  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2026-01-23T07:29:31.716Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+    integrations: { browserstack: [Object] }
+  }
+} to 5162:0
+2026-01-23T07:29:31.727Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'TestRunStarted',
+  test_run: {
+    type: 'test',
+    framework: 'pytest',
+    uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+    name: 'test_example',
+    body: {
+      lang: 'python',
+      code: '    def test_example(self):\n' +
+        '        search_element = WebDriverWait(self.driver, 30).until(\n' +
+        '            EC.element_to_be_clickable(\n' +
+        '                (AppiumBy.ACCESSIBILITY_ID, "Search Wikipedia"))\n' +
+        '            )\n' +
+        '\n' +
+        '        search_element.click()\n' +
+        '        search_input = WebDriverWait(self.driver, 30).until(\n' +
+        '            EC.element_to_be_clickable(\n' +
+        '                (AppiumBy.ID, "org.wikipedia.alpha:id/search_src_text"))\n' +
+        '            )\n' +
+        '        search_input.send_keys("BrowserStack")\n' +
+        '        time.sleep(5)\n' +
+        '        search_results = self.driver.find_elements(\n' +
+        '            AppiumBy.CLASS_NAME, "android.widget.TextView")\n' +
+        '        \n' +
+        '        assert len(search_results) > 0\n'
+    },
+    identifier: 'test_example',
+    scope: 'test_example',
+    scopes: [ 'TestSample' ],
+    file_name: 'bstack_sample.py',
+    vc_filepath: 'android/bstack_sample.py',
+    location: 'bstack_sample.py',
+    result: 'pending',
+    duration_in_ms: null,
+    started_at: '2026-01-23T07:29:31.109Z',
+    failure: undefined,
+    failure_type: undefined,
+    failure_reason: null,
+    retry_of: null,
+    custom_metadata: undefined,
+    tags: [ 'usefixtures' ],
+    customRerunParam: { rerun_name: 'bstack_sample.py::TestSample::test_example' },
+    hooks: [],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: false,
+      app_automate: true
+    },
+    integrations: { browserstack: [Object] }
+  },
+  logs: []
+} to 5162:0
+2026-01-23T07:29:33.285Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Processing batch event [
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      integrations: [Object]
+    }
+  },
+  {
+    event_type: 'TestRunStarted',
+    test_run: {
+      type: 'test',
+      framework: 'pytest',
+      uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      name: 'test_example',
+      body: [Object],
+      identifier: 'test_example',
+      scope: 'test_example',
+      scopes: [Array],
+      file_name: 'bstack_sample.py',
+      vc_filepath: 'android/bstack_sample.py',
+      location: 'bstack_sample.py',
+      result: 'pending',
+      duration_in_ms: null,
+      started_at: '2026-01-23T07:29:31.109Z',
+      failure: undefined,
+      failure_type: undefined,
+      failure_reason: null,
+      retry_of: null,
+      custom_metadata: undefined,
+      tags: [Array],
+      customRerunParam: [Object],
+      hooks: [],
+      product_map: [Object],
+      integrations: [Object]
+    },
+    logs: []
+  }
+] to 5162:0
+2026-01-23T07:29:33.287Z CLI info  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2026-01-23T07:29:40.056Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T07:28:56.540Z',
+      uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      kind: 'TEST_LOG',
+      message: 'Test passed:',
+      level: 'INFO',
+      test_run_uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6'
+    }
+  ]
+} to 5162:0
+2026-01-23T07:29:40.059Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T07:28:56.540Z',
+      uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      kind: 'TEST_LOG',
+      message: 'bstack_sample.py::TestSample::test_example',
+      level: 'INFO',
+      test_run_uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6'
+    }
+  ]
+} to 5162:0
+2026-01-23T07:29:40.061Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T07:28:56.540Z',
+      uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      kind: 'TEST_LOG',
+      message: '9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1',
+      level: 'INFO',
+      test_run_uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6'
+    }
+  ]
+} to 5162:0
+2026-01-23T07:29:40.063Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T07:28:56.540Z',
+      uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      kind: 'TEST_LOG',
+      message: 'Test passed:  bstack_sample.py::TestSample::test_example 9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1',
+      level: 'INFO',
+      test_run_uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6'
+    }
+  ]
+} to 5162:0
+2026-01-23T07:29:40.073Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T07:28:56.540Z',
+      uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      kind: 'TEST_LOG',
+      message: '\x1B[32m.\x1B[0m',
+      level: 'INFO',
+      test_run_uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6'
+    }
+  ]
+} to 5162:0
+2026-01-23T07:29:40.532Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'TestRunFinished',
+  test_run: {
+    type: 'test',
+    framework: 'pytest',
+    uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+    name: 'test_example',
+    body: {
+      lang: 'python',
+      code: '    def test_example(self):\n' +
+        '        search_element = WebDriverWait(self.driver, 30).until(\n' +
+        '            EC.element_to_be_clickable(\n' +
+        '                (AppiumBy.ACCESSIBILITY_ID, "Search Wikipedia"))\n' +
+        '            )\n' +
+        '\n' +
+        '        search_element.click()\n' +
+        '        search_input = WebDriverWait(self.driver, 30).until(\n' +
+        '            EC.element_to_be_clickable(\n' +
+        '                (AppiumBy.ID, "org.wikipedia.alpha:id/search_src_text"))\n' +
+        '            )\n' +
+        '        search_input.send_keys("BrowserStack")\n' +
+        '        time.sleep(5)\n' +
+        '        search_results = self.driver.find_elements(\n' +
+        '            AppiumBy.CLASS_NAME, "android.widget.TextView")\n' +
+        '        \n' +
+        '        assert len(search_results) > 0\n'
+    },
+    identifier: 'test_example',
+    scope: 'test_example',
+    scopes: [ 'TestSample' ],
+    file_name: 'bstack_sample.py',
+    vc_filepath: 'android/bstack_sample.py',
+    location: 'bstack_sample.py',
+    result: 'passed',
+    duration_in_ms: 8967,
+    started_at: '2026-01-23T07:29:31.109Z',
+    finished_at: '2026-01-23T07:29:40.076Z',
+    failure: null,
+    failure_type: null,
+    failure_reason: null,
+    retry_of: null,
+    custom_metadata: {},
+    tags: [ 'usefixtures' ],
+    customRerunParam: { rerun_name: 'bstack_sample.py::TestSample::test_example' },
+    hooks: [ '87f13d1a-0daa-41ba-bce5-a6061fd33b5a' ],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: false,
+      app_automate: true
+    }
+  },
+  logs: []
+} to 5162:0
+2026-01-23T07:29:40.538Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'HookRunStarted',
+  hook_run: {
+    type: 'hook',
+    hook_type: 'AFTER_EACH',
+    framework: 'pytest',
+    uuid: '82f228bc-5b87-483e-93e8-0d5b15634c3a',
+    name: 'teardown',
+    result: 'pending',
+    test_run_id: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+    body: { lang: 'python', code: null },
+    scope: 'test_example',
+    custom_metadata: {},
+    tags: [],
+    scopes: [ 'TestSample' ],
+    file_name: 'bstack_sample.py',
+    location: 'bstack_sample.py',
+    vc_filepath: 'bstack_sample.py',
+    started_at: '2026-01-23T07:29:40.536Z'
+  },
+  logs: []
+} to 5162:0
+2026-01-23T07:29:41.291Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Processing batch event [
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  {
+    event_type: 'TestRunFinished',
+    test_run: {
+      type: 'test',
+      framework: 'pytest',
+      uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      name: 'test_example',
+      body: [Object],
+      identifier: 'test_example',
+      scope: 'test_example',
+      scopes: [Array],
+      file_name: 'bstack_sample.py',
+      vc_filepath: 'android/bstack_sample.py',
+      location: 'bstack_sample.py',
+      result: 'passed',
+      duration_in_ms: 8967,
+      started_at: '2026-01-23T07:29:31.109Z',
+      finished_at: '2026-01-23T07:29:40.076Z',
+      failure: null,
+      failure_type: null,
+      failure_reason: null,
+      retry_of: null,
+      custom_metadata: {},
+      tags: [Array],
+      customRerunParam: [Object],
+      hooks: [Array],
+      product_map: [Object]
+    },
+    logs: []
+  },
+  {
+    event_type: 'HookRunStarted',
+    hook_run: {
+      type: 'hook',
+      hook_type: 'AFTER_EACH',
+      framework: 'pytest',
+      uuid: '82f228bc-5b87-483e-93e8-0d5b15634c3a',
+      name: 'teardown',
+      result: 'pending',
+      test_run_id: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      body: [Object],
+      scope: 'test_example',
+      custom_metadata: {},
+      tags: [],
+      scopes: [Array],
+      file_name: 'bstack_sample.py',
+      location: 'bstack_sample.py',
+      vc_filepath: 'bstack_sample.py',
+      started_at: '2026-01-23T07:29:40.536Z'
+    },
+    logs: []
+  }
+] to 5162:0
+2026-01-23T07:29:41.291Z CLI info  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2026-01-23T07:29:42.132Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T07:29:40.077Z',
+      uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      kind: 'TEST_LOG',
+      message: 'POST https://hub-aps.browserstack.com/wd/hub/session/e4f88c14e9e142321d69a1c6a7c2615eb3ffedab/execute/sync {"script": "browserstack_executor: {\\"action\\": \\"setSessionStatus\\", \\"arguments\\": {\\"status\\": \\"passed\\"}}", "args": []}',
+      level: 'DEBUG',
+      test_run_uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6'
+    }
+  ]
+} to 5162:0
+2026-01-23T07:29:42.132Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T07:29:40.517Z',
+      uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      kind: 'TEST_LOG',
+      message: 'https://hub-aps.browserstack.com:443 "POST /wd/hub/session/e4f88c14e9e142321d69a1c6a7c2615eb3ffedab/execute/sync HTTP/1.1" 200 None',
+      level: 'DEBUG',
+      test_run_uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6'
+    }
+  ]
+} to 5162:0
+2026-01-23T07:29:42.132Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T07:29:40.519Z',
+      uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      kind: 'TEST_LOG',
+      message: `Remote response: status=200 | data={"sessionId":"e4f88c14e9e142321d69a1c6a7c2615eb3ffedab","status":0,"value":"{\\"automation_session\\":{\\"hashed_id\\":\\"e4f88c14e9e142321d69a1c6a7c2615eb3ffedab\\",\\"name\\":\\"bstack_sample.py::TestSample.test_example\\",\\"status\\":\\"passed\\",\\"os\\":\\"android\\",\\"os_version\\":\\"13.0\\",\\"browser\\":null,\\"browser_version\\":\\"app\\",\\"device\\":\\"Samsung Galaxy S23 Ultra\\",\\"duration\\":null,\\"reason\\":null,\\"build_name\\":\\"browserstack build  1\\",\\"project_name\\":\\"BrowserStack Samples\\",\\"build_hashed_id\\":\\"25fc7f6055773c5793a16bac7e3519706a42c197\\"}}"} | headers=HTTPHeaderDict({'Server': 'nginx', 'Date': 'Fri, 23 Jan 2026 07:29:40 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Source-From': '02', 'cache-control': 'no-cache'})`,
+      level: 'DEBUG',
+      test_run_uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6'
+    }
+  ]
+} to 5162:0
+2026-01-23T07:29:42.132Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T07:29:40.519Z',
+      uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      kind: 'TEST_LOG',
+      message: 'Finished Request',
+      level: 'DEBUG',
+      test_run_uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6'
+    }
+  ]
+} to 5162:0
+2026-01-23T07:29:42.132Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T07:29:40.546Z',
+      uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      kind: 'TEST_LOG',
+      message: 'DELETE https://hub-aps.browserstack.com/wd/hub/session/e4f88c14e9e142321d69a1c6a7c2615eb3ffedab {}',
+      level: 'DEBUG',
+      test_run_uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6'
+    }
+  ]
+} to 5162:0
+2026-01-23T07:29:42.132Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T07:29:42.113Z',
+      uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      kind: 'TEST_LOG',
+      message: 'https://hub-aps.browserstack.com:443 "DELETE /wd/hub/session/e4f88c14e9e142321d69a1c6a7c2615eb3ffedab HTTP/1.1" 200 None',
+      level: 'DEBUG',
+      test_run_uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6'
+    }
+  ]
+} to 5162:0
+2026-01-23T07:29:42.132Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T07:29:42.115Z',
+      uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      kind: 'TEST_LOG',
+      message: `Remote response: status=200 | data={"state":"success","status":0,"value":""} | headers=HTTPHeaderDict({'Server': 'nginx', 'Date': 'Fri, 23 Jan 2026 07:29:42 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Source-From': '02', 'cache-control': 'no-cache'})`,
+      level: 'DEBUG',
+      test_run_uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6'
+    }
+  ]
+} to 5162:0
+2026-01-23T07:29:42.132Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T07:29:42.115Z',
+      uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      kind: 'TEST_LOG',
+      message: 'Finished Request',
+      level: 'DEBUG',
+      test_run_uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6'
+    }
+  ]
+} to 5162:0
+2026-01-23T07:29:42.132Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T07:29:31.109Z',
+      uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      kind: 'TEST_LOG',
+      message: 'POST https://hub-aps.browserstack.com/wd/hub/session/e4f88c14e9e142321d69a1c6a7c2615eb3ffedab/execute/sync {"script": "browserstack_executor: {\\"action\\": \\"setSessionName\\", \\"arguments\\": {\\"name\\": \\"bstack_sample.py::TestSample.test_example\\"}}", "args": []}',
+      level: 'DEBUG',
+      test_run_uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6'
+    }
+  ]
+} to 5162:0
+2026-01-23T07:29:42.132Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T07:29:31.658Z',
+      uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      kind: 'TEST_LOG',
+      message: 'https://hub-aps.browserstack.com:443 "POST /wd/hub/session/e4f88c14e9e142321d69a1c6a7c2615eb3ffedab/execute/sync HTTP/1.1" 200 None',
+      level: 'DEBUG',
+      test_run_uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6'
+    }
+  ]
+} to 5162:0
+2026-01-23T07:29:42.132Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T07:29:31.658Z',
+      uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      kind: 'TEST_LOG',
+      message: `Remote response: status=200 | data={"sessionId":"e4f88c14e9e142321d69a1c6a7c2615eb3ffedab","status":0,"value":"{\\"automation_session\\":{\\"name\\":\\"bstack_sample.py::TestSample.test_example\\",\\"duration\\":null,\\"os\\":\\"android\\",\\"os_version\\":\\"13.0\\",\\"browser_version\\":\\"app\\",\\"browser\\":null,\\"device\\":\\"Samsung Galaxy S23 Ultra\\",\\"status\\":\\"running\\",\\"hashed_id\\":\\"e4f88c14e9e142321d69a1c6a7c2615eb3ffedab\\",\\"reason\\":null,\\"build_name\\":\\"browserstack build  1\\",\\"project_name\\":\\"BrowserStack Samples\\",\\"build_hashed_id\\":\\"25fc7f6055773c5793a16bac7e3519706a42c197\\"}}"} | headers=HTTPHeaderDict({'Server': 'nginx', 'Date': 'Fri, 23 Jan 2026 07:29:31 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Source-From': '02', 'cache-control': 'no-cache'})`,
+      level: 'DEBUG',
+      test_run_uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6'
+    }
+  ]
+} to 5162:0
+2026-01-23T07:29:42.132Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T07:29:31.658Z',
+      uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      kind: 'TEST_LOG',
+      message: 'Finished Request',
+      level: 'DEBUG',
+      test_run_uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6'
+    }
+  ]
+} to 5162:0
+2026-01-23T07:29:42.132Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T07:29:31.662Z',
+      uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      kind: 'TEST_LOG',
+      message: 'POST https://hub-aps.browserstack.com/wd/hub/session/e4f88c14e9e142321d69a1c6a7c2615eb3ffedab/execute/sync {"script": "browserstack_executor: {\\"action\\": \\"annotate\\", \\"arguments\\": {\\"type\\": \\"Annotation\\", \\"data\\": \\"ObservabilitySync:1769153371661\\", \\"level\\": \\"debug\\"}}", "args": []}',
+      level: 'DEBUG',
+      test_run_uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6'
+    }
+  ]
+} to 5162:0
+2026-01-23T07:29:42.132Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T07:29:31.710Z',
+      uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      kind: 'TEST_LOG',
+      message: 'https://hub-aps.browserstack.com:443 "POST /wd/hub/session/e4f88c14e9e142321d69a1c6a7c2615eb3ffedab/execute/sync HTTP/1.1" 200 None',
+      level: 'DEBUG',
+      test_run_uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6'
+    }
+  ]
+} to 5162:0
+2026-01-23T07:29:42.132Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T07:29:31.712Z',
+      uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      kind: 'TEST_LOG',
+      message: `Remote response: status=200 | data={"sessionId":"e4f88c14e9e142321d69a1c6a7c2615eb3ffedab","status":0,"value":"ObservabilitySync:1769153371661"} | headers=HTTPHeaderDict({'Server': 'nginx', 'Date': 'Fri, 23 Jan 2026 07:29:31 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Source-From': '02', 'cache-control': 'no-cache'})`,
+      level: 'DEBUG',
+      test_run_uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6'
+    }
+  ]
+} to 5162:0
+2026-01-23T07:29:42.132Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T07:29:31.712Z',
+      uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      kind: 'TEST_LOG',
+      message: 'Finished Request',
+      level: 'DEBUG',
+      test_run_uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6'
+    }
+  ]
+} to 5162:0
+2026-01-23T07:29:42.132Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T07:29:31.729Z',
+      uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      kind: 'TEST_LOG',
+      message: 'POST https://hub-aps.browserstack.com/wd/hub/session/e4f88c14e9e142321d69a1c6a7c2615eb3ffedab/element {"using": "accessibility id", "value": "Search Wikipedia"}',
+      level: 'DEBUG',
+      test_run_uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6'
+    }
+  ]
+} to 5162:0
+2026-01-23T07:29:42.132Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T07:29:32.504Z',
+      uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      kind: 'TEST_LOG',
+      message: 'https://hub-aps.browserstack.com:443 "POST /wd/hub/session/e4f88c14e9e142321d69a1c6a7c2615eb3ffedab/element HTTP/1.1" 200 137',
+      level: 'DEBUG',
+      test_run_uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6'
+    }
+  ]
+} to 5162:0
+2026-01-23T07:29:42.132Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T07:29:32.505Z',
+      uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      kind: 'TEST_LOG',
+      message: `Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-008d-ffff-ffff00000036","ELEMENT":"00000000-0000-008d-ffff-ffff00000036"}} | headers=HTTPHeaderDict({'Server': 'nginx', 'Date': 'Fri, 23 Jan 2026 07:29:32 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '137', 'Connection': 'keep-alive', 'Source-From': '02', 'x-powered-by': 'Express', 'vary': 'X-HTTP-Method-Override', 'etag': 'W/"89-SZUV8ZWyakcH3SMqfGQfpE/DYyQ"'})`,
+      level: 'DEBUG',
+      test_run_uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6'
+    }
+  ]
+} to 5162:0
+2026-01-23T07:29:42.132Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T07:29:32.505Z',
+      uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      kind: 'TEST_LOG',
+      message: 'Finished Request',
+      level: 'DEBUG',
+      test_run_uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6'
+    }
+  ]
+} to 5162:0
+2026-01-23T07:29:42.132Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T07:29:32.507Z',
+      uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      kind: 'TEST_LOG',
+      message: 'GET https://hub-aps.browserstack.com/wd/hub/session/e4f88c14e9e142321d69a1c6a7c2615eb3ffedab/element/00000000-0000-008d-ffff-ffff00000036/displayed {"id": "00000000-0000-008d-ffff-ffff00000036"}',
+      level: 'DEBUG',
+      test_run_uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6'
+    }
+  ]
+} to 5162:0
+2026-01-23T07:29:42.132Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T07:29:32.599Z',
+      uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      kind: 'TEST_LOG',
+      message: 'https://hub-aps.browserstack.com:443 "GET /wd/hub/session/e4f88c14e9e142321d69a1c6a7c2615eb3ffedab/element/00000000-0000-008d-ffff-ffff00000036/displayed HTTP/1.1" 200 14',
+      level: 'DEBUG',
+      test_run_uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6'
+    }
+  ]
+} to 5162:0
+2026-01-23T07:29:42.133Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T07:29:32.600Z',
+      uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      kind: 'TEST_LOG',
+      message: `Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Server': 'nginx', 'Date': 'Fri, 23 Jan 2026 07:29:32 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'Connection': 'keep-alive', 'Source-From': '02', 'x-powered-by': 'Express', 'etag': 'W/"e-2ZHvAWebNQpyjGZTg6uyV8/spTo"'})`,
+      level: 'DEBUG',
+      test_run_uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6'
+    }
+  ]
+} to 5162:0
+2026-01-23T07:29:42.133Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T07:29:32.600Z',
+      uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      kind: 'TEST_LOG',
+      message: 'Finished Request',
+      level: 'DEBUG',
+      test_run_uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6'
+    }
+  ]
+} to 5162:0
+2026-01-23T07:29:42.133Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T07:29:32.601Z',
+      uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      kind: 'TEST_LOG',
+      message: 'GET https://hub-aps.browserstack.com/wd/hub/session/e4f88c14e9e142321d69a1c6a7c2615eb3ffedab/element/00000000-0000-008d-ffff-ffff00000036/enabled {"id": "00000000-0000-008d-ffff-ffff00000036"}',
+      level: 'DEBUG',
+      test_run_uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6'
+    }
+  ]
+} to 5162:0
+2026-01-23T07:29:42.133Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T07:29:32.674Z',
+      uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      kind: 'TEST_LOG',
+      message: 'https://hub-aps.browserstack.com:443 "GET /wd/hub/session/e4f88c14e9e142321d69a1c6a7c2615eb3ffedab/element/00000000-0000-008d-ffff-ffff00000036/enabled HTTP/1.1" 200 14',
+      level: 'DEBUG',
+      test_run_uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6'
+    }
+  ]
+} to 5162:0
+2026-01-23T07:29:42.133Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T07:29:32.675Z',
+      uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      kind: 'TEST_LOG',
+      message: `Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Server': 'nginx', 'Date': 'Fri, 23 Jan 2026 07:29:32 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'Connection': 'keep-alive', 'Source-From': '02', 'x-powered-by': 'Express', 'etag': 'W/"e-2ZHvAWebNQpyjGZTg6uyV8/spTo"'})`,
+      level: 'DEBUG',
+      test_run_uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6'
+    }
+  ]
+} to 5162:0
+2026-01-23T07:29:42.133Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T07:29:32.675Z',
+      uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      kind: 'TEST_LOG',
+      message: 'Finished Request',
+      level: 'DEBUG',
+      test_run_uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6'
+    }
+  ]
+} to 5162:0
+2026-01-23T07:29:42.133Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T07:29:32.677Z',
+      uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      kind: 'TEST_LOG',
+      message: 'POST https://hub-aps.browserstack.com/wd/hub/session/e4f88c14e9e142321d69a1c6a7c2615eb3ffedab/element/00000000-0000-008d-ffff-ffff00000036/click {"id": "00000000-0000-008d-ffff-ffff00000036"}',
+      level: 'DEBUG',
+      test_run_uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6'
+    }
+  ]
+} to 5162:0
+2026-01-23T07:29:42.133Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T07:29:32.809Z',
+      uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      kind: 'TEST_LOG',
+      message: 'https://hub-aps.browserstack.com:443 "POST /wd/hub/session/e4f88c14e9e142321d69a1c6a7c2615eb3ffedab/element/00000000-0000-008d-ffff-ffff00000036/click HTTP/1.1" 200 14',
+      level: 'DEBUG',
+      test_run_uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6'
+    }
+  ]
+} to 5162:0
+2026-01-23T07:29:42.133Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T07:29:32.810Z',
+      uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      kind: 'TEST_LOG',
+      message: `Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Server': 'nginx', 'Date': 'Fri, 23 Jan 2026 07:29:32 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'Connection': 'keep-alive', 'Source-From': '02', 'x-powered-by': 'Express', 'vary': 'X-HTTP-Method-Override', 'etag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"'})`,
+      level: 'DEBUG',
+      test_run_uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6'
+    }
+  ]
+} to 5162:0
+2026-01-23T07:29:42.133Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T07:29:32.810Z',
+      uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      kind: 'TEST_LOG',
+      message: 'Finished Request',
+      level: 'DEBUG',
+      test_run_uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6'
+    }
+  ]
+} to 5162:0
+2026-01-23T07:29:42.133Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T07:29:32.812Z',
+      uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      kind: 'TEST_LOG',
+      message: 'POST https://hub-aps.browserstack.com/wd/hub/session/e4f88c14e9e142321d69a1c6a7c2615eb3ffedab/element {"using": "id", "value": "org.wikipedia.alpha:id/search_src_text"}',
+      level: 'DEBUG',
+      test_run_uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6'
+    }
+  ]
+} to 5162:0
+2026-01-23T07:29:42.133Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T07:29:33.851Z',
+      uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      kind: 'TEST_LOG',
+      message: 'https://hub-aps.browserstack.com:443 "POST /wd/hub/session/e4f88c14e9e142321d69a1c6a7c2615eb3ffedab/element HTTP/1.1" 200 137',
+      level: 'DEBUG',
+      test_run_uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6'
+    }
+  ]
+} to 5162:0
+2026-01-23T07:29:42.133Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T07:29:33.852Z',
+      uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      kind: 'TEST_LOG',
+      message: `Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-008d-ffff-ffff000000a2","ELEMENT":"00000000-0000-008d-ffff-ffff000000a2"}} | headers=HTTPHeaderDict({'Server': 'nginx', 'Date': 'Fri, 23 Jan 2026 07:29:33 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '137', 'Connection': 'keep-alive', 'Source-From': '02', 'x-powered-by': 'Express', 'vary': 'X-HTTP-Method-Override', 'etag': 'W/"89-+x7DOWmCTKYoj5dq0PKCZM4X2S0"'})`,
+      level: 'DEBUG',
+      test_run_uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6'
+    }
+  ]
+} to 5162:0
+2026-01-23T07:29:42.133Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T07:29:33.852Z',
+      uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      kind: 'TEST_LOG',
+      message: 'Finished Request',
+      level: 'DEBUG',
+      test_run_uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6'
+    }
+  ]
+} to 5162:0
+2026-01-23T07:29:42.133Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T07:29:33.854Z',
+      uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      kind: 'TEST_LOG',
+      message: 'GET https://hub-aps.browserstack.com/wd/hub/session/e4f88c14e9e142321d69a1c6a7c2615eb3ffedab/element/00000000-0000-008d-ffff-ffff000000a2/displayed {"id": "00000000-0000-008d-ffff-ffff000000a2"}',
+      level: 'DEBUG',
+      test_run_uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6'
+    }
+  ]
+} to 5162:0
+2026-01-23T07:29:42.133Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T07:29:33.938Z',
+      uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      kind: 'TEST_LOG',
+      message: 'https://hub-aps.browserstack.com:443 "GET /wd/hub/session/e4f88c14e9e142321d69a1c6a7c2615eb3ffedab/element/00000000-0000-008d-ffff-ffff000000a2/displayed HTTP/1.1" 200 14',
+      level: 'DEBUG',
+      test_run_uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6'
+    }
+  ]
+} to 5162:0
+2026-01-23T07:29:42.133Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T07:29:33.938Z',
+      uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      kind: 'TEST_LOG',
+      message: `Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Server': 'nginx', 'Date': 'Fri, 23 Jan 2026 07:29:33 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'Connection': 'keep-alive', 'Source-From': '02', 'x-powered-by': 'Express', 'etag': 'W/"e-2ZHvAWebNQpyjGZTg6uyV8/spTo"'})`,
+      level: 'DEBUG',
+      test_run_uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6'
+    }
+  ]
+} to 5162:0
+2026-01-23T07:29:42.133Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T07:29:33.939Z',
+      uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      kind: 'TEST_LOG',
+      message: 'Finished Request',
+      level: 'DEBUG',
+      test_run_uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6'
+    }
+  ]
+} to 5162:0
+2026-01-23T07:29:42.134Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T07:29:33.940Z',
+      uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      kind: 'TEST_LOG',
+      message: 'GET https://hub-aps.browserstack.com/wd/hub/session/e4f88c14e9e142321d69a1c6a7c2615eb3ffedab/element/00000000-0000-008d-ffff-ffff000000a2/enabled {"id": "00000000-0000-008d-ffff-ffff000000a2"}',
+      level: 'DEBUG',
+      test_run_uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6'
+    }
+  ]
+} to 5162:0
+2026-01-23T07:29:42.134Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T07:29:34.016Z',
+      uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      kind: 'TEST_LOG',
+      message: 'https://hub-aps.browserstack.com:443 "GET /wd/hub/session/e4f88c14e9e142321d69a1c6a7c2615eb3ffedab/element/00000000-0000-008d-ffff-ffff000000a2/enabled HTTP/1.1" 200 14',
+      level: 'DEBUG',
+      test_run_uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6'
+    }
+  ]
+} to 5162:0
+2026-01-23T07:29:42.134Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T07:29:34.017Z',
+      uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      kind: 'TEST_LOG',
+      message: `Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Server': 'nginx', 'Date': 'Fri, 23 Jan 2026 07:29:34 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'Connection': 'keep-alive', 'Source-From': '02', 'x-powered-by': 'Express', 'etag': 'W/"e-2ZHvAWebNQpyjGZTg6uyV8/spTo"'})`,
+      level: 'DEBUG',
+      test_run_uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6'
+    }
+  ]
+} to 5162:0
+2026-01-23T07:29:42.134Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T07:29:34.017Z',
+      uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      kind: 'TEST_LOG',
+      message: 'Finished Request',
+      level: 'DEBUG',
+      test_run_uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6'
+    }
+  ]
+} to 5162:0
+2026-01-23T07:29:42.134Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T07:29:34.019Z',
+      uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      kind: 'TEST_LOG',
+      message: 'POST https://hub-aps.browserstack.com/wd/hub/session/e4f88c14e9e142321d69a1c6a7c2615eb3ffedab/element/00000000-0000-008d-ffff-ffff000000a2/value {"text": "BrowserStack", "value": ["B", "r", "o", "w", "s", "e", "r", "S", "t", "a", "c", "k"], "id": "00000000-0000-008d-ffff-ffff000000a2"}',
+      level: 'DEBUG',
+      test_run_uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6'
+    }
+  ]
+} to 5162:0
+2026-01-23T07:29:42.134Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T07:29:34.834Z',
+      uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      kind: 'TEST_LOG',
+      message: 'https://hub-aps.browserstack.com:443 "POST /wd/hub/session/e4f88c14e9e142321d69a1c6a7c2615eb3ffedab/element/00000000-0000-008d-ffff-ffff000000a2/value HTTP/1.1" 200 14',
+      level: 'DEBUG',
+      test_run_uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6'
+    }
+  ]
+} to 5162:0
+2026-01-23T07:29:42.134Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T07:29:34.835Z',
+      uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      kind: 'TEST_LOG',
+      message: `Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Server': 'nginx', 'Date': 'Fri, 23 Jan 2026 07:29:34 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'Connection': 'keep-alive', 'Source-From': '02', 'x-powered-by': 'Express', 'vary': 'X-HTTP-Method-Override', 'etag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"'})`,
+      level: 'DEBUG',
+      test_run_uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6'
+    }
+  ]
+} to 5162:0
+2026-01-23T07:29:42.134Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T07:29:34.835Z',
+      uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      kind: 'TEST_LOG',
+      message: 'Finished Request',
+      level: 'DEBUG',
+      test_run_uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6'
+    }
+  ]
+} to 5162:0
+2026-01-23T07:29:42.134Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T07:29:39.838Z',
+      uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      kind: 'TEST_LOG',
+      message: 'POST https://hub-aps.browserstack.com/wd/hub/session/e4f88c14e9e142321d69a1c6a7c2615eb3ffedab/elements {"using": "class name", "value": "android.widget.TextView"}',
+      level: 'DEBUG',
+      test_run_uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6'
+    }
+  ]
+} to 5162:0
+2026-01-23T07:29:42.134Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T07:29:40.043Z',
+      uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      kind: 'TEST_LOG',
+      message: 'https://hub-aps.browserstack.com:443 "POST /wd/hub/session/e4f88c14e9e142321d69a1c6a7c2615eb3ffedab/elements HTTP/1.1" 200 2059',
+      level: 'DEBUG',
+      test_run_uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6'
+    }
+  ]
+} to 5162:0
+2026-01-23T07:29:42.134Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T07:29:40.044Z',
+      uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      kind: 'TEST_LOG',
+      message: `Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-008d-ffff-ffff000000a8","ELEMENT":"00000000-0000-008d-ffff-ffff000000a8"},{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-008d-ffff-ffff000000ad","ELEMENT":"00000000-0000-008d-ffff-ffff000000ad"},{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-008d-ffff-ffff000000c4","ELEMENT":"00000000-0000-008d-ffff-ffff000000c4"},{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-008d-ffff-ffff000000c8","ELEMENT":"00000000-0000-008d-ffff-ffff000000c8"},{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-008d-ffff-ffff000000cc","ELEMENT":"00000000-0000-008d-ffff-ffff000000cc"},{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-008d-ffff-ffff000000cf","ELEMENT":"00000000-0000-008d-ffff-ffff000000cf"},{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-008d-ffff-ffff000000d4","ELEMENT":"00000000-0000-008d-ffff-ffff000000d4"},{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-008d-ffff-ffff000000d7","ELEMENT":"00000000-0000-008d-ffff-ffff000000d7"},{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-008d-ffff-ffff000000dc","ELEMENT":"00000000-0000-008d-ffff-ffff000000dc"},{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-008d-ffff-ffff000000df","ELEMENT":"00000000-0000-008d-ffff-ffff000000df"},{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-008d-ffff-ffff00000037","ELEMENT":"00000000-0000-008d-ffff-ffff00000037"},{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-008d-ffff-ffff00000041","ELEMENT":"00000000-0000-008d-ffff-ffff00000041"},{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-008d-ffff-ffff00000043","ELEMENT":"00000000-0000-008d-ffff-ffff00000043"},{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-008d-ffff-ffff0000004a","ELEMENT":"00000000-0000-008d-ffff-ffff0000004a"},{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-008d-ffff-ffff0000004e","ELEMENT":"00000000-0000-008d-ffff-ffff0000004e"},{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-008d-ffff-ffff00000011","ELEMENT":"00000000-0000-008d-ffff-ffff00000011"}]} | headers=HTTPHeaderDict({'Server': 'nginx', 'Date': 'Fri, 23 Jan 2026 07:29:40 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '2059', 'Connection': 'keep-alive', 'Source-From': '02', 'x-powered-by': 'Express', 'vary': 'X-HTTP-Method-Override', 'etag': 'W/"80b-jaMkyXOnZ9b0zol2vVfAaH/sTd8"'})`,
+      level: 'DEBUG',
+      test_run_uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6'
+    }
+  ]
+} to 5162:0
+2026-01-23T07:29:42.134Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T07:29:40.045Z',
+      uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+      kind: 'TEST_LOG',
+      message: 'Finished Request',
+      level: 'DEBUG',
+      test_run_uuid: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6'
+    }
+  ]
+} to 5162:0
+2026-01-23T07:29:42.137Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Added the event {
+  event_type: 'HookRunFinished',
+  hook_run: {
+    type: 'hook',
+    hook_type: 'AFTER_EACH',
+    framework: 'pytest',
+    uuid: '82f228bc-5b87-483e-93e8-0d5b15634c3a',
+    name: 'teardown',
+    result: 'passed',
+    test_run_id: 'd43c29d5-1963-41f9-8671-ba9d9ae357d6',
+    body: { lang: 'python', code: null },
+    scope: 'test_example',
+    custom_metadata: {},
+    tags: [],
+    scopes: [ 'TestSample' ],
+    file_name: 'bstack_sample.py',
+    location: 'bstack_sample.py',
+    vc_filepath: 'bstack_sample.py',
+    started_at: '2026-01-23T07:29:40.536Z',
+    finished_at: '2026-01-23T07:29:42.133Z'
+  },
+  logs: []
+} to 5162:0
+2026-01-23T07:29:42.215Z CLI info  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  [PRODUCTION] Making GET request to https://api.browserstack.com
+2026-01-23T07:29:42.217Z CLI info  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2026-01-23T07:29:43.580Z CLI info  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  [PRODUCTION] Making PUT request to https://collector-observability.browserstack.com
+2026-01-23T07:29:44.550Z CLI info [testhub:module]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  stopBuild: 9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1 request={"finished_at":"2026-01-23T07:29:42.216Z","finished_metadata":[],"custom_metadata":null} response={"data":""}
+2026-01-23T07:29:44.552Z CLI info  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  [PRODUCTION] Making POST request to https://api.browserstack.com
+2026-01-23T07:29:45.074Z CLI info [TEST REPORTING AND ANALYTICS:module]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Visit https://automation.browserstack.com/builds/9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1 to view build report, insights, and many more debugging information all at one place!
+2026-01-23T07:29:51.150Z CLI info [main]  [dilipk_JLRgqw]  [9wkqum4lw60e6mlyquru7snr2ilqiq2boesew8g1]  [4b9e0aa6-0d4c-4e19-a2f3-9d7765c3d4ff]  Received graceful signal termination, performing cleanup
+2026-01-23T08:24:00.431Z CLI info     Config : {"userName":"[REDACTED]","accessKey":"[REDACTED]","projectName":"BrowserStack Samples","buildName":"browserstack build","buildIdentifier":"#${BUILD_NUMBER}","framework":"pytest","app":"./WikipediaSample.apk","platforms":[{"deviceName":"Samsung Galaxy S23 Ultra","osVersion":"13.0","platformName":"android"}],"parallelsPerPlatform":1,"browserstackLocal":true,"source":"pytest-appium-browserstack:sample-sdk:v1.0","debug":false,"networkLogs":false,"consoleLogs":"errors"}
+2026-01-23T08:24:00.444Z CLI info     Should start debug utility: undefined
+2026-01-23T08:24:00.467Z CLI info [testhub:module]  [dilipk_JLRgqw]   [6633d007-2494-45f0-b6fd-73cf43731271]  Starting testhub from 5780:0
+2026-01-23T08:24:00.467Z CLI info  [dilipk_JLRgqw]   [6633d007-2494-45f0-b6fd-73cf43731271]  [PRODUCTION] Making POST request to https://sdk.browserstack.com
+2026-01-23T08:24:00.468Z CLI info  [dilipk_JLRgqw]   [6633d007-2494-45f0-b6fd-73cf43731271]  [PRODUCTION] Making GET request to https://hub.browserstack.com
+2026-01-23T08:24:01.385Z CLI info [testhub:module]  [dilipk_JLRgqw]   [6633d007-2494-45f0-b6fd-73cf43731271]  startBuild: response=hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl
+2026-01-23T08:24:01.387Z CLI info  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  [PRODUCTION] Making POST request to https://api.browserstack.com
+2026-01-23T08:24:01.414Z CLI info  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  [PRODUCTION] Making GET request to https://hub-aps.browserstack.com
+2026-01-23T08:24:01.414Z CLI info  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  [PRODUCTION] Making GET request to https://hub-euw.browserstack.com
+2026-01-23T08:24:01.415Z CLI info  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  [PRODUCTION] Making GET request to https://hub-apse.browserstack.com
+2026-01-23T08:24:02.886Z CLI info  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  [PRODUCTION] Making GET request to https://api.browserstack.com
+2026-01-23T08:24:03.622Z CLI error  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  error invoking callback for eventName: {}
+2026-01-23T08:24:03.622Z CLI error  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Error: invalid percyToken=null
+    at /snapshot/browserstack-binary/cli/dist/index.js
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2026-01-23T08:24:12.604Z CLI info [appautomate:service]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Using app: ./WikipediaSample.apk
+2026-01-23T08:24:12.605Z CLI info [appautomate:service]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Uploading app /Users/dilipkn/Documents/software_dev/pytest-appium-app-browserstack/android/WikipediaSample.apk  to browserstack
+2026-01-23T08:24:12.642Z CLI info [appautomate:service]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  App already uploaded with md5 Hash Id: bs://1062ecd56cea48c6ff286325fa3cf230784bc155
+2026-01-23T08:24:13.297Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'HookRunStarted',
+  hook_run: {
+    type: 'hook',
+    hook_type: 'BEFORE_EACH',
+    framework: 'pytest',
+    uuid: 'd8fe2895-5b16-48fb-9474-2909eed440d6',
+    name: 'setup',
+    result: 'pending',
+    test_run_id: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+    body: { lang: 'python', code: null },
+    scope: 'test_example',
+    custom_metadata: {},
+    tags: [],
+    scopes: [ 'TestSample' ],
+    file_name: 'bstack_sample.py',
+    location: 'bstack_sample.py',
+    vc_filepath: 'bstack_sample.py',
+    started_at: '2026-01-23T08:24:13.294Z'
+  },
+  logs: []
+} to 5780:0
+2026-01-23T08:24:13.306Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T08:24:13.135Z',
+      uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      kind: 'TEST_LOG',
+      message: '2026-01-23T08:24:13Z [bstack1ll1ll11lll_opy_][INFO] - Remote Server Address being passed as : https://hub.browserstack.com/wd/hub',
+      level: 'INFO',
+      test_run_uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7'
+    }
+  ]
+} to 5780:0
+2026-01-23T08:24:13.308Z CLI info [sdk:service]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Driver initialized as primary driver: platformIndex=0
+2026-01-23T08:24:13.311Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T08:24:13.135Z',
+      uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      kind: 'TEST_LOG',
+      message: '2026-01-23T08:24:13Z [bstack1ll1ll11lll_opy_][INFO] - Completed setup!',
+      level: 'INFO',
+      test_run_uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7'
+    }
+  ]
+} to 5780:0
+2026-01-23T08:24:13.314Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T08:24:13.135Z',
+      uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      kind: 'TEST_LOG',
+      message: "2026-01-23T08:24:13Z [bstack1ll1ll11lll_opy_][INFO] - driver.__init__ platform_index=0: args=() kwargs={'command_executor': 'https://hub-aps.browserstack.com/wd/hub', 'options': <appium.options.common.base.AppiumOptions object at 0x10401ab20>, 'desired_capabilities': None, 'keep_alive': True, 'file_detector': None}",
+      level: 'INFO',
+      test_run_uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7'
+    }
+  ]
+} to 5780:0
+2026-01-23T08:24:13.317Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T08:24:13.135Z',
+      uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      kind: 'TEST_LOG',
+      message: '2026-01-23T08:24:13Z [bstack1ll1ll11lll_opy_][WARNING] - hub_url=https://hub-aps.browserstack.com/wd/hub',
+      level: 'INFO',
+      test_run_uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7'
+    }
+  ]
+} to 5780:0
+2026-01-23T08:24:13.319Z CLI info [local:module]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  initSession: localIdentifier=Jan_23_1354_Dilips-MacBook-Pro.local_i67m pid=5790
+2026-01-23T08:24:13.392Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Processing batch event [
+  {
+    event_type: 'HookRunStarted',
+    hook_run: {
+      type: 'hook',
+      hook_type: 'BEFORE_EACH',
+      framework: 'pytest',
+      uuid: 'd8fe2895-5b16-48fb-9474-2909eed440d6',
+      name: 'setup',
+      result: 'pending',
+      test_run_id: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      body: [Object],
+      scope: 'test_example',
+      custom_metadata: {},
+      tags: [],
+      scopes: [Array],
+      file_name: 'bstack_sample.py',
+      location: 'bstack_sample.py',
+      vc_filepath: 'bstack_sample.py',
+      started_at: '2026-01-23T08:24:13.294Z'
+    },
+    logs: []
+  },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] }
+] to 5780:0
+2026-01-23T08:24:13.393Z CLI info  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2026-01-23T08:24:45.835Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T08:24:13.135Z',
+      uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      kind: 'TEST_LOG',
+      message: 'Direct connect capabilities from server were:\n' +
+        "directConnectProtocol: '' directConnectHost: '' directConnectPort: '' directConnectPath: ''",
+      level: 'ERROR',
+      test_run_uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7'
+    }
+  ]
+} to 5780:0
+2026-01-23T08:24:45.840Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'HookRunFinished',
+  hook_run: {
+    type: 'hook',
+    hook_type: 'BEFORE_EACH',
+    framework: 'pytest',
+    uuid: 'd8fe2895-5b16-48fb-9474-2909eed440d6',
+    name: 'setup',
+    result: 'passed',
+    test_run_id: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+    body: { lang: 'python', code: null },
+    scope: 'test_example',
+    custom_metadata: {},
+    tags: [],
+    scopes: [ 'TestSample' ],
+    file_name: 'bstack_sample.py',
+    location: 'bstack_sample.py',
+    vc_filepath: 'bstack_sample.py',
+    started_at: '2026-01-23T08:24:13.294Z',
+    finished_at: '2026-01-23T08:24:45.837Z'
+  },
+  logs: []
+} to 5780:0
+2026-01-23T08:24:46.542Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+    integrations: { browserstack: [Object] }
+  }
+} to 5780:0
+2026-01-23T08:24:46.555Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'TestRunStarted',
+  test_run: {
+    type: 'test',
+    framework: 'pytest',
+    uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+    name: 'test_example',
+    body: {
+      lang: 'python',
+      code: '    def test_example(self):\n' +
+        '        search_element = WebDriverWait(self.driver, 30).until(\n' +
+        '            EC.element_to_be_clickable(\n' +
+        `                (AppiumBy.XPATH, '//android.widget.TextView[@text="Search Wikipedia"]'))\n` +
+        '            )\n' +
+        '\n' +
+        '        search_element.click()\n' +
+        '        search_input = WebDriverWait(self.driver, 30).until(\n' +
+        '            EC.element_to_be_clickable(\n' +
+        '                (AppiumBy.ID, "org.wikipedia.alpha:id/search_src_text"))\n' +
+        '            )\n' +
+        '        search_input.send_keys("BrowserStack")\n' +
+        '        time.sleep(5)\n' +
+        '        search_results = self.driver.find_elements(\n' +
+        '            AppiumBy.CLASS_NAME, "android.widget.TextView")\n' +
+        '        \n' +
+        '        assert len(search_results) > 0\n'
+    },
+    identifier: 'test_example',
+    scope: 'test_example',
+    scopes: [ 'TestSample' ],
+    file_name: 'bstack_sample.py',
+    vc_filepath: 'android/bstack_sample.py',
+    location: 'bstack_sample.py',
+    result: 'pending',
+    duration_in_ms: null,
+    started_at: '2026-01-23T08:24:45.844Z',
+    failure: undefined,
+    failure_type: undefined,
+    failure_reason: null,
+    retry_of: null,
+    custom_metadata: undefined,
+    tags: [ 'usefixtures' ],
+    customRerunParam: { rerun_name: 'bstack_sample.py::TestSample::test_example' },
+    hooks: [],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: false,
+      app_automate: true
+    },
+    integrations: { browserstack: [Object] }
+  },
+  logs: []
+} to 5780:0
+2026-01-23T08:24:47.411Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Processing batch event [
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  {
+    event_type: 'HookRunFinished',
+    hook_run: {
+      type: 'hook',
+      hook_type: 'BEFORE_EACH',
+      framework: 'pytest',
+      uuid: 'd8fe2895-5b16-48fb-9474-2909eed440d6',
+      name: 'setup',
+      result: 'passed',
+      test_run_id: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      body: [Object],
+      scope: 'test_example',
+      custom_metadata: {},
+      tags: [],
+      scopes: [Array],
+      file_name: 'bstack_sample.py',
+      location: 'bstack_sample.py',
+      vc_filepath: 'bstack_sample.py',
+      started_at: '2026-01-23T08:24:13.294Z',
+      finished_at: '2026-01-23T08:24:45.837Z'
+    },
+    logs: []
+  },
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      integrations: [Object]
+    }
+  },
+  {
+    event_type: 'TestRunStarted',
+    test_run: {
+      type: 'test',
+      framework: 'pytest',
+      uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      name: 'test_example',
+      body: [Object],
+      identifier: 'test_example',
+      scope: 'test_example',
+      scopes: [Array],
+      file_name: 'bstack_sample.py',
+      vc_filepath: 'android/bstack_sample.py',
+      location: 'bstack_sample.py',
+      result: 'pending',
+      duration_in_ms: null,
+      started_at: '2026-01-23T08:24:45.844Z',
+      failure: undefined,
+      failure_type: undefined,
+      failure_reason: null,
+      retry_of: null,
+      custom_metadata: undefined,
+      tags: [Array],
+      customRerunParam: [Object],
+      hooks: [],
+      product_map: [Object],
+      integrations: [Object]
+    },
+    logs: []
+  }
+] to 5780:0
+2026-01-23T08:24:47.413Z CLI info  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2026-01-23T08:24:54.686Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T08:24:13.135Z',
+      uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      kind: 'TEST_LOG',
+      message: 'Test passed:',
+      level: 'INFO',
+      test_run_uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7'
+    }
+  ]
+} to 5780:0
+2026-01-23T08:24:54.690Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T08:24:13.135Z',
+      uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      kind: 'TEST_LOG',
+      message: 'bstack_sample.py::TestSample::test_example',
+      level: 'INFO',
+      test_run_uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7'
+    }
+  ]
+} to 5780:0
+2026-01-23T08:24:54.693Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T08:24:13.135Z',
+      uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      kind: 'TEST_LOG',
+      message: 'hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl',
+      level: 'INFO',
+      test_run_uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7'
+    }
+  ]
+} to 5780:0
+2026-01-23T08:24:54.697Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T08:24:13.135Z',
+      uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      kind: 'TEST_LOG',
+      message: 'Test passed:  bstack_sample.py::TestSample::test_example hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl',
+      level: 'INFO',
+      test_run_uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7'
+    }
+  ]
+} to 5780:0
+2026-01-23T08:24:54.705Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T08:24:13.135Z',
+      uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      kind: 'TEST_LOG',
+      message: '\x1B[32m.\x1B[0m',
+      level: 'INFO',
+      test_run_uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7'
+    }
+  ]
+} to 5780:0
+2026-01-23T08:24:55.365Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'TestRunFinished',
+  test_run: {
+    type: 'test',
+    framework: 'pytest',
+    uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+    name: 'test_example',
+    body: {
+      lang: 'python',
+      code: '    def test_example(self):\n' +
+        '        search_element = WebDriverWait(self.driver, 30).until(\n' +
+        '            EC.element_to_be_clickable(\n' +
+        `                (AppiumBy.XPATH, '//android.widget.TextView[@text="Search Wikipedia"]'))\n` +
+        '            )\n' +
+        '\n' +
+        '        search_element.click()\n' +
+        '        search_input = WebDriverWait(self.driver, 30).until(\n' +
+        '            EC.element_to_be_clickable(\n' +
+        '                (AppiumBy.ID, "org.wikipedia.alpha:id/search_src_text"))\n' +
+        '            )\n' +
+        '        search_input.send_keys("BrowserStack")\n' +
+        '        time.sleep(5)\n' +
+        '        search_results = self.driver.find_elements(\n' +
+        '            AppiumBy.CLASS_NAME, "android.widget.TextView")\n' +
+        '        \n' +
+        '        assert len(search_results) > 0\n'
+    },
+    identifier: 'test_example',
+    scope: 'test_example',
+    scopes: [ 'TestSample' ],
+    file_name: 'bstack_sample.py',
+    vc_filepath: 'android/bstack_sample.py',
+    location: 'bstack_sample.py',
+    result: 'passed',
+    duration_in_ms: 8864,
+    started_at: '2026-01-23T08:24:45.844Z',
+    finished_at: '2026-01-23T08:24:54.708Z',
+    failure: null,
+    failure_type: null,
+    failure_reason: null,
+    retry_of: null,
+    custom_metadata: {},
+    tags: [ 'usefixtures' ],
+    customRerunParam: { rerun_name: 'bstack_sample.py::TestSample::test_example' },
+    hooks: [ 'd8fe2895-5b16-48fb-9474-2909eed440d6' ],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: false,
+      app_automate: true
+    }
+  },
+  logs: []
+} to 5780:0
+2026-01-23T08:24:55.371Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'HookRunStarted',
+  hook_run: {
+    type: 'hook',
+    hook_type: 'AFTER_EACH',
+    framework: 'pytest',
+    uuid: '9529d11e-5bac-4e8c-9fae-1c7f98d0999e',
+    name: 'teardown',
+    result: 'pending',
+    test_run_id: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+    body: { lang: 'python', code: null },
+    scope: 'test_example',
+    custom_metadata: {},
+    tags: [],
+    scopes: [ 'TestSample' ],
+    file_name: 'bstack_sample.py',
+    location: 'bstack_sample.py',
+    vc_filepath: 'bstack_sample.py',
+    started_at: '2026-01-23T08:24:55.368Z'
+  },
+  logs: []
+} to 5780:0
+2026-01-23T08:24:55.414Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Processing batch event [
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  {
+    event_type: 'TestRunFinished',
+    test_run: {
+      type: 'test',
+      framework: 'pytest',
+      uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      name: 'test_example',
+      body: [Object],
+      identifier: 'test_example',
+      scope: 'test_example',
+      scopes: [Array],
+      file_name: 'bstack_sample.py',
+      vc_filepath: 'android/bstack_sample.py',
+      location: 'bstack_sample.py',
+      result: 'passed',
+      duration_in_ms: 8864,
+      started_at: '2026-01-23T08:24:45.844Z',
+      finished_at: '2026-01-23T08:24:54.708Z',
+      failure: null,
+      failure_type: null,
+      failure_reason: null,
+      retry_of: null,
+      custom_metadata: {},
+      tags: [Array],
+      customRerunParam: [Object],
+      hooks: [Array],
+      product_map: [Object]
+    },
+    logs: []
+  },
+  {
+    event_type: 'HookRunStarted',
+    hook_run: {
+      type: 'hook',
+      hook_type: 'AFTER_EACH',
+      framework: 'pytest',
+      uuid: '9529d11e-5bac-4e8c-9fae-1c7f98d0999e',
+      name: 'teardown',
+      result: 'pending',
+      test_run_id: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      body: [Object],
+      scope: 'test_example',
+      custom_metadata: {},
+      tags: [],
+      scopes: [Array],
+      file_name: 'bstack_sample.py',
+      location: 'bstack_sample.py',
+      vc_filepath: 'bstack_sample.py',
+      started_at: '2026-01-23T08:24:55.368Z'
+    },
+    logs: []
+  }
+] to 5780:0
+2026-01-23T08:24:55.415Z CLI info  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2026-01-23T08:24:56.815Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T08:24:54.708Z',
+      uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      kind: 'TEST_LOG',
+      message: 'POST https://hub-aps.browserstack.com/wd/hub/session/be3005418e402f675dbbe3196dd3ae94a7eb01e0/execute/sync {"script": "browserstack_executor: {\\"action\\": \\"setSessionStatus\\", \\"arguments\\": {\\"status\\": \\"passed\\"}}", "args": []}',
+      level: 'DEBUG',
+      test_run_uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7'
+    }
+  ]
+} to 5780:0
+2026-01-23T08:24:56.815Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T08:24:55.349Z',
+      uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      kind: 'TEST_LOG',
+      message: 'https://hub-aps.browserstack.com:443 "POST /wd/hub/session/be3005418e402f675dbbe3196dd3ae94a7eb01e0/execute/sync HTTP/1.1" 200 None',
+      level: 'DEBUG',
+      test_run_uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7'
+    }
+  ]
+} to 5780:0
+2026-01-23T08:24:56.815Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T08:24:55.351Z',
+      uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      kind: 'TEST_LOG',
+      message: `Remote response: status=200 | data={"sessionId":"be3005418e402f675dbbe3196dd3ae94a7eb01e0","status":0,"value":"{\\"automation_session\\":{\\"hashed_id\\":\\"be3005418e402f675dbbe3196dd3ae94a7eb01e0\\",\\"name\\":\\"bstack_sample.py::TestSample.test_example\\",\\"status\\":\\"passed\\",\\"os\\":\\"android\\",\\"os_version\\":\\"13.0\\",\\"browser\\":null,\\"browser_version\\":\\"app\\",\\"device\\":\\"Samsung Galaxy S23 Ultra\\",\\"duration\\":null,\\"reason\\":null,\\"build_name\\":\\"browserstack build  2\\",\\"project_name\\":\\"BrowserStack Samples\\",\\"build_hashed_id\\":\\"8f8c3b01d98ecdb766d07d1219688435deef670a\\"}}"} | headers=HTTPHeaderDict({'Server': 'nginx', 'Date': 'Fri, 23 Jan 2026 08:24:55 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Source-From': '02', 'cache-control': 'no-cache'})`,
+      level: 'DEBUG',
+      test_run_uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7'
+    }
+  ]
+} to 5780:0
+2026-01-23T08:24:56.815Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T08:24:55.351Z',
+      uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      kind: 'TEST_LOG',
+      message: 'Finished Request',
+      level: 'DEBUG',
+      test_run_uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7'
+    }
+  ]
+} to 5780:0
+2026-01-23T08:24:56.816Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T08:24:55.378Z',
+      uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      kind: 'TEST_LOG',
+      message: 'DELETE https://hub-aps.browserstack.com/wd/hub/session/be3005418e402f675dbbe3196dd3ae94a7eb01e0 {}',
+      level: 'DEBUG',
+      test_run_uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7'
+    }
+  ]
+} to 5780:0
+2026-01-23T08:24:56.816Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T08:24:56.789Z',
+      uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      kind: 'TEST_LOG',
+      message: 'https://hub-aps.browserstack.com:443 "DELETE /wd/hub/session/be3005418e402f675dbbe3196dd3ae94a7eb01e0 HTTP/1.1" 200 None',
+      level: 'DEBUG',
+      test_run_uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7'
+    }
+  ]
+} to 5780:0
+2026-01-23T08:24:56.816Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T08:24:56.790Z',
+      uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      kind: 'TEST_LOG',
+      message: `Remote response: status=200 | data={"state":"success","status":0,"value":""} | headers=HTTPHeaderDict({'Server': 'nginx', 'Date': 'Fri, 23 Jan 2026 08:24:56 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Source-From': '02', 'cache-control': 'no-cache'})`,
+      level: 'DEBUG',
+      test_run_uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7'
+    }
+  ]
+} to 5780:0
+2026-01-23T08:24:56.816Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T08:24:56.791Z',
+      uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      kind: 'TEST_LOG',
+      message: 'Finished Request',
+      level: 'DEBUG',
+      test_run_uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7'
+    }
+  ]
+} to 5780:0
+2026-01-23T08:24:56.816Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T08:24:45.844Z',
+      uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      kind: 'TEST_LOG',
+      message: 'POST https://hub-aps.browserstack.com/wd/hub/session/be3005418e402f675dbbe3196dd3ae94a7eb01e0/execute/sync {"script": "browserstack_executor: {\\"action\\": \\"setSessionName\\", \\"arguments\\": {\\"name\\": \\"bstack_sample.py::TestSample.test_example\\"}}", "args": []}',
+      level: 'DEBUG',
+      test_run_uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7'
+    }
+  ]
+} to 5780:0
+2026-01-23T08:24:56.816Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T08:24:46.415Z',
+      uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      kind: 'TEST_LOG',
+      message: 'https://hub-aps.browserstack.com:443 "POST /wd/hub/session/be3005418e402f675dbbe3196dd3ae94a7eb01e0/execute/sync HTTP/1.1" 200 None',
+      level: 'DEBUG',
+      test_run_uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7'
+    }
+  ]
+} to 5780:0
+2026-01-23T08:24:56.816Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T08:24:46.417Z',
+      uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      kind: 'TEST_LOG',
+      message: `Remote response: status=200 | data={"sessionId":"be3005418e402f675dbbe3196dd3ae94a7eb01e0","status":0,"value":"{\\"automation_session\\":{\\"name\\":\\"bstack_sample.py::TestSample.test_example\\",\\"duration\\":null,\\"os\\":\\"android\\",\\"os_version\\":\\"13.0\\",\\"browser_version\\":\\"app\\",\\"browser\\":null,\\"device\\":\\"Samsung Galaxy S23 Ultra\\",\\"status\\":\\"running\\",\\"hashed_id\\":\\"be3005418e402f675dbbe3196dd3ae94a7eb01e0\\",\\"reason\\":null,\\"build_name\\":\\"browserstack build  2\\",\\"project_name\\":\\"BrowserStack Samples\\",\\"build_hashed_id\\":\\"8f8c3b01d98ecdb766d07d1219688435deef670a\\"}}"} | headers=HTTPHeaderDict({'Server': 'nginx', 'Date': 'Fri, 23 Jan 2026 08:24:46 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Source-From': '02', 'cache-control': 'no-cache'})`,
+      level: 'DEBUG',
+      test_run_uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7'
+    }
+  ]
+} to 5780:0
+2026-01-23T08:24:56.816Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T08:24:46.417Z',
+      uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      kind: 'TEST_LOG',
+      message: 'Finished Request',
+      level: 'DEBUG',
+      test_run_uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7'
+    }
+  ]
+} to 5780:0
+2026-01-23T08:24:56.816Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T08:24:46.426Z',
+      uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      kind: 'TEST_LOG',
+      message: 'POST https://hub-aps.browserstack.com/wd/hub/session/be3005418e402f675dbbe3196dd3ae94a7eb01e0/execute/sync {"script": "browserstack_executor: {\\"action\\": \\"annotate\\", \\"arguments\\": {\\"type\\": \\"Annotation\\", \\"data\\": \\"ObservabilitySync:1769156686425\\", \\"level\\": \\"debug\\"}}", "args": []}',
+      level: 'DEBUG',
+      test_run_uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7'
+    }
+  ]
+} to 5780:0
+2026-01-23T08:24:56.816Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T08:24:46.530Z',
+      uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      kind: 'TEST_LOG',
+      message: 'https://hub-aps.browserstack.com:443 "POST /wd/hub/session/be3005418e402f675dbbe3196dd3ae94a7eb01e0/execute/sync HTTP/1.1" 200 None',
+      level: 'DEBUG',
+      test_run_uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7'
+    }
+  ]
+} to 5780:0
+2026-01-23T08:24:56.816Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T08:24:46.531Z',
+      uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      kind: 'TEST_LOG',
+      message: `Remote response: status=200 | data={"sessionId":"be3005418e402f675dbbe3196dd3ae94a7eb01e0","status":0,"value":"ObservabilitySync:1769156686425"} | headers=HTTPHeaderDict({'Server': 'nginx', 'Date': 'Fri, 23 Jan 2026 08:24:46 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Source-From': '02', 'cache-control': 'no-cache'})`,
+      level: 'DEBUG',
+      test_run_uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7'
+    }
+  ]
+} to 5780:0
+2026-01-23T08:24:56.816Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T08:24:46.532Z',
+      uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      kind: 'TEST_LOG',
+      message: 'Finished Request',
+      level: 'DEBUG',
+      test_run_uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7'
+    }
+  ]
+} to 5780:0
+2026-01-23T08:24:56.816Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T08:24:46.557Z',
+      uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      kind: 'TEST_LOG',
+      message: 'POST https://hub-aps.browserstack.com/wd/hub/session/be3005418e402f675dbbe3196dd3ae94a7eb01e0/element {"using": "xpath", "value": "//android.widget.TextView[@text=\\"Search Wikipedia\\"]"}',
+      level: 'DEBUG',
+      test_run_uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7'
+    }
+  ]
+} to 5780:0
+2026-01-23T08:24:56.816Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T08:24:47.439Z',
+      uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      kind: 'TEST_LOG',
+      message: 'https://hub-aps.browserstack.com:443 "POST /wd/hub/session/be3005418e402f675dbbe3196dd3ae94a7eb01e0/element HTTP/1.1" 200 137',
+      level: 'DEBUG',
+      test_run_uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7'
+    }
+  ]
+} to 5780:0
+2026-01-23T08:24:56.816Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T08:24:47.440Z',
+      uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      kind: 'TEST_LOG',
+      message: `Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0078-ffff-ffff00000037","ELEMENT":"00000000-0000-0078-ffff-ffff00000037"}} | headers=HTTPHeaderDict({'Server': 'nginx', 'Date': 'Fri, 23 Jan 2026 08:24:47 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '137', 'Connection': 'keep-alive', 'Source-From': '02', 'x-powered-by': 'Express', 'vary': 'X-HTTP-Method-Override', 'etag': 'W/"89-eyeT96K3h+tPhQxjINptyvXhklU"'})`,
+      level: 'DEBUG',
+      test_run_uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7'
+    }
+  ]
+} to 5780:0
+2026-01-23T08:24:56.816Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T08:24:47.441Z',
+      uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      kind: 'TEST_LOG',
+      message: 'Finished Request',
+      level: 'DEBUG',
+      test_run_uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7'
+    }
+  ]
+} to 5780:0
+2026-01-23T08:24:56.817Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T08:24:47.442Z',
+      uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      kind: 'TEST_LOG',
+      message: 'GET https://hub-aps.browserstack.com/wd/hub/session/be3005418e402f675dbbe3196dd3ae94a7eb01e0/element/00000000-0000-0078-ffff-ffff00000037/displayed {"id": "00000000-0000-0078-ffff-ffff00000037"}',
+      level: 'DEBUG',
+      test_run_uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7'
+    }
+  ]
+} to 5780:0
+2026-01-23T08:24:56.817Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T08:24:47.582Z',
+      uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      kind: 'TEST_LOG',
+      message: 'https://hub-aps.browserstack.com:443 "GET /wd/hub/session/be3005418e402f675dbbe3196dd3ae94a7eb01e0/element/00000000-0000-0078-ffff-ffff00000037/displayed HTTP/1.1" 200 14',
+      level: 'DEBUG',
+      test_run_uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7'
+    }
+  ]
+} to 5780:0
+2026-01-23T08:24:56.817Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T08:24:47.582Z',
+      uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      kind: 'TEST_LOG',
+      message: `Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Server': 'nginx', 'Date': 'Fri, 23 Jan 2026 08:24:47 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'Connection': 'keep-alive', 'Source-From': '02', 'x-powered-by': 'Express', 'etag': 'W/"e-2ZHvAWebNQpyjGZTg6uyV8/spTo"'})`,
+      level: 'DEBUG',
+      test_run_uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7'
+    }
+  ]
+} to 5780:0
+2026-01-23T08:24:56.817Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T08:24:47.583Z',
+      uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      kind: 'TEST_LOG',
+      message: 'Finished Request',
+      level: 'DEBUG',
+      test_run_uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7'
+    }
+  ]
+} to 5780:0
+2026-01-23T08:24:56.817Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T08:24:47.585Z',
+      uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      kind: 'TEST_LOG',
+      message: 'GET https://hub-aps.browserstack.com/wd/hub/session/be3005418e402f675dbbe3196dd3ae94a7eb01e0/element/00000000-0000-0078-ffff-ffff00000037/enabled {"id": "00000000-0000-0078-ffff-ffff00000037"}',
+      level: 'DEBUG',
+      test_run_uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7'
+    }
+  ]
+} to 5780:0
+2026-01-23T08:24:56.817Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T08:24:47.699Z',
+      uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      kind: 'TEST_LOG',
+      message: 'https://hub-aps.browserstack.com:443 "GET /wd/hub/session/be3005418e402f675dbbe3196dd3ae94a7eb01e0/element/00000000-0000-0078-ffff-ffff00000037/enabled HTTP/1.1" 200 14',
+      level: 'DEBUG',
+      test_run_uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7'
+    }
+  ]
+} to 5780:0
+2026-01-23T08:24:56.817Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T08:24:47.700Z',
+      uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      kind: 'TEST_LOG',
+      message: `Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Server': 'nginx', 'Date': 'Fri, 23 Jan 2026 08:24:47 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'Connection': 'keep-alive', 'Source-From': '02', 'x-powered-by': 'Express', 'etag': 'W/"e-2ZHvAWebNQpyjGZTg6uyV8/spTo"'})`,
+      level: 'DEBUG',
+      test_run_uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7'
+    }
+  ]
+} to 5780:0
+2026-01-23T08:24:56.817Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T08:24:47.700Z',
+      uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      kind: 'TEST_LOG',
+      message: 'Finished Request',
+      level: 'DEBUG',
+      test_run_uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7'
+    }
+  ]
+} to 5780:0
+2026-01-23T08:24:56.817Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T08:24:47.702Z',
+      uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      kind: 'TEST_LOG',
+      message: 'POST https://hub-aps.browserstack.com/wd/hub/session/be3005418e402f675dbbe3196dd3ae94a7eb01e0/element/00000000-0000-0078-ffff-ffff00000037/click {"id": "00000000-0000-0078-ffff-ffff00000037"}',
+      level: 'DEBUG',
+      test_run_uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7'
+    }
+  ]
+} to 5780:0
+2026-01-23T08:24:56.817Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T08:24:47.881Z',
+      uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      kind: 'TEST_LOG',
+      message: 'https://hub-aps.browserstack.com:443 "POST /wd/hub/session/be3005418e402f675dbbe3196dd3ae94a7eb01e0/element/00000000-0000-0078-ffff-ffff00000037/click HTTP/1.1" 200 14',
+      level: 'DEBUG',
+      test_run_uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7'
+    }
+  ]
+} to 5780:0
+2026-01-23T08:24:56.817Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T08:24:47.882Z',
+      uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      kind: 'TEST_LOG',
+      message: `Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Server': 'nginx', 'Date': 'Fri, 23 Jan 2026 08:24:47 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'Connection': 'keep-alive', 'Source-From': '02', 'x-powered-by': 'Express', 'vary': 'X-HTTP-Method-Override', 'etag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"'})`,
+      level: 'DEBUG',
+      test_run_uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7'
+    }
+  ]
+} to 5780:0
+2026-01-23T08:24:56.817Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T08:24:47.882Z',
+      uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      kind: 'TEST_LOG',
+      message: 'Finished Request',
+      level: 'DEBUG',
+      test_run_uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7'
+    }
+  ]
+} to 5780:0
+2026-01-23T08:24:56.817Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T08:24:47.883Z',
+      uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      kind: 'TEST_LOG',
+      message: 'POST https://hub-aps.browserstack.com/wd/hub/session/be3005418e402f675dbbe3196dd3ae94a7eb01e0/element {"using": "id", "value": "org.wikipedia.alpha:id/search_src_text"}',
+      level: 'DEBUG',
+      test_run_uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7'
+    }
+  ]
+} to 5780:0
+2026-01-23T08:24:56.817Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T08:24:48.955Z',
+      uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      kind: 'TEST_LOG',
+      message: 'https://hub-aps.browserstack.com:443 "POST /wd/hub/session/be3005418e402f675dbbe3196dd3ae94a7eb01e0/element HTTP/1.1" 200 137',
+      level: 'DEBUG',
+      test_run_uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7'
+    }
+  ]
+} to 5780:0
+2026-01-23T08:24:56.817Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T08:24:48.957Z',
+      uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      kind: 'TEST_LOG',
+      message: `Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0078-ffff-ffff000000a2","ELEMENT":"00000000-0000-0078-ffff-ffff000000a2"}} | headers=HTTPHeaderDict({'Server': 'nginx', 'Date': 'Fri, 23 Jan 2026 08:24:48 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '137', 'Connection': 'keep-alive', 'Source-From': '02', 'x-powered-by': 'Express', 'vary': 'X-HTTP-Method-Override', 'etag': 'W/"89-nT0S7PHRk6UuX3K7mFpatPLJa9g"'})`,
+      level: 'DEBUG',
+      test_run_uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7'
+    }
+  ]
+} to 5780:0
+2026-01-23T08:24:56.818Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T08:24:48.957Z',
+      uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      kind: 'TEST_LOG',
+      message: 'Finished Request',
+      level: 'DEBUG',
+      test_run_uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7'
+    }
+  ]
+} to 5780:0
+2026-01-23T08:24:56.818Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T08:24:48.959Z',
+      uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      kind: 'TEST_LOG',
+      message: 'GET https://hub-aps.browserstack.com/wd/hub/session/be3005418e402f675dbbe3196dd3ae94a7eb01e0/element/00000000-0000-0078-ffff-ffff000000a2/displayed {"id": "00000000-0000-0078-ffff-ffff000000a2"}',
+      level: 'DEBUG',
+      test_run_uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7'
+    }
+  ]
+} to 5780:0
+2026-01-23T08:24:56.818Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T08:24:49.073Z',
+      uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      kind: 'TEST_LOG',
+      message: 'https://hub-aps.browserstack.com:443 "GET /wd/hub/session/be3005418e402f675dbbe3196dd3ae94a7eb01e0/element/00000000-0000-0078-ffff-ffff000000a2/displayed HTTP/1.1" 200 14',
+      level: 'DEBUG',
+      test_run_uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7'
+    }
+  ]
+} to 5780:0
+2026-01-23T08:24:56.818Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T08:24:49.074Z',
+      uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      kind: 'TEST_LOG',
+      message: `Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Server': 'nginx', 'Date': 'Fri, 23 Jan 2026 08:24:49 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'Connection': 'keep-alive', 'Source-From': '02', 'x-powered-by': 'Express', 'etag': 'W/"e-2ZHvAWebNQpyjGZTg6uyV8/spTo"'})`,
+      level: 'DEBUG',
+      test_run_uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7'
+    }
+  ]
+} to 5780:0
+2026-01-23T08:24:56.818Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T08:24:49.074Z',
+      uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      kind: 'TEST_LOG',
+      message: 'Finished Request',
+      level: 'DEBUG',
+      test_run_uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7'
+    }
+  ]
+} to 5780:0
+2026-01-23T08:24:56.818Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T08:24:49.076Z',
+      uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      kind: 'TEST_LOG',
+      message: 'GET https://hub-aps.browserstack.com/wd/hub/session/be3005418e402f675dbbe3196dd3ae94a7eb01e0/element/00000000-0000-0078-ffff-ffff000000a2/enabled {"id": "00000000-0000-0078-ffff-ffff000000a2"}',
+      level: 'DEBUG',
+      test_run_uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7'
+    }
+  ]
+} to 5780:0
+2026-01-23T08:24:56.818Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T08:24:49.206Z',
+      uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      kind: 'TEST_LOG',
+      message: 'https://hub-aps.browserstack.com:443 "GET /wd/hub/session/be3005418e402f675dbbe3196dd3ae94a7eb01e0/element/00000000-0000-0078-ffff-ffff000000a2/enabled HTTP/1.1" 200 14',
+      level: 'DEBUG',
+      test_run_uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7'
+    }
+  ]
+} to 5780:0
+2026-01-23T08:24:56.818Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T08:24:49.206Z',
+      uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      kind: 'TEST_LOG',
+      message: `Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Server': 'nginx', 'Date': 'Fri, 23 Jan 2026 08:24:49 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'Connection': 'keep-alive', 'Source-From': '02', 'x-powered-by': 'Express', 'etag': 'W/"e-2ZHvAWebNQpyjGZTg6uyV8/spTo"'})`,
+      level: 'DEBUG',
+      test_run_uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7'
+    }
+  ]
+} to 5780:0
+2026-01-23T08:24:56.818Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T08:24:49.207Z',
+      uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      kind: 'TEST_LOG',
+      message: 'Finished Request',
+      level: 'DEBUG',
+      test_run_uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7'
+    }
+  ]
+} to 5780:0
+2026-01-23T08:24:56.818Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T08:24:49.208Z',
+      uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      kind: 'TEST_LOG',
+      message: 'POST https://hub-aps.browserstack.com/wd/hub/session/be3005418e402f675dbbe3196dd3ae94a7eb01e0/element/00000000-0000-0078-ffff-ffff000000a2/value {"text": "BrowserStack", "value": ["B", "r", "o", "w", "s", "e", "r", "S", "t", "a", "c", "k"], "id": "00000000-0000-0078-ffff-ffff000000a2"}',
+      level: 'DEBUG',
+      test_run_uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7'
+    }
+  ]
+} to 5780:0
+2026-01-23T08:24:56.818Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T08:24:49.436Z',
+      uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      kind: 'TEST_LOG',
+      message: 'https://hub-aps.browserstack.com:443 "POST /wd/hub/session/be3005418e402f675dbbe3196dd3ae94a7eb01e0/element/00000000-0000-0078-ffff-ffff000000a2/value HTTP/1.1" 200 14',
+      level: 'DEBUG',
+      test_run_uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7'
+    }
+  ]
+} to 5780:0
+2026-01-23T08:24:56.818Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T08:24:49.437Z',
+      uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      kind: 'TEST_LOG',
+      message: `Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Server': 'nginx', 'Date': 'Fri, 23 Jan 2026 08:24:49 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'Connection': 'keep-alive', 'Source-From': '02', 'x-powered-by': 'Express', 'vary': 'X-HTTP-Method-Override', 'etag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"'})`,
+      level: 'DEBUG',
+      test_run_uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7'
+    }
+  ]
+} to 5780:0
+2026-01-23T08:24:56.818Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T08:24:49.437Z',
+      uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      kind: 'TEST_LOG',
+      message: 'Finished Request',
+      level: 'DEBUG',
+      test_run_uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7'
+    }
+  ]
+} to 5780:0
+2026-01-23T08:24:56.818Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T08:24:54.442Z',
+      uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      kind: 'TEST_LOG',
+      message: 'POST https://hub-aps.browserstack.com/wd/hub/session/be3005418e402f675dbbe3196dd3ae94a7eb01e0/elements {"using": "class name", "value": "android.widget.TextView"}',
+      level: 'DEBUG',
+      test_run_uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7'
+    }
+  ]
+} to 5780:0
+2026-01-23T08:24:56.818Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T08:24:54.672Z',
+      uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      kind: 'TEST_LOG',
+      message: 'https://hub-aps.browserstack.com:443 "POST /wd/hub/session/be3005418e402f675dbbe3196dd3ae94a7eb01e0/elements HTTP/1.1" 200 2059',
+      level: 'DEBUG',
+      test_run_uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7'
+    }
+  ]
+} to 5780:0
+2026-01-23T08:24:56.818Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T08:24:54.673Z',
+      uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      kind: 'TEST_LOG',
+      message: `Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0078-ffff-ffff000000a8","ELEMENT":"00000000-0000-0078-ffff-ffff000000a8"},{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0078-ffff-ffff000000ad","ELEMENT":"00000000-0000-0078-ffff-ffff000000ad"},{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0078-ffff-ffff000000c4","ELEMENT":"00000000-0000-0078-ffff-ffff000000c4"},{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0078-ffff-ffff000000c8","ELEMENT":"00000000-0000-0078-ffff-ffff000000c8"},{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0078-ffff-ffff000000cc","ELEMENT":"00000000-0000-0078-ffff-ffff000000cc"},{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0078-ffff-ffff000000cf","ELEMENT":"00000000-0000-0078-ffff-ffff000000cf"},{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0078-ffff-ffff000000d4","ELEMENT":"00000000-0000-0078-ffff-ffff000000d4"},{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0078-ffff-ffff000000d7","ELEMENT":"00000000-0000-0078-ffff-ffff000000d7"},{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0078-ffff-ffff000000dc","ELEMENT":"00000000-0000-0078-ffff-ffff000000dc"},{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0078-ffff-ffff000000df","ELEMENT":"00000000-0000-0078-ffff-ffff000000df"},{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0078-ffff-ffff00000037","ELEMENT":"00000000-0000-0078-ffff-ffff00000037"},{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0078-ffff-ffff00000041","ELEMENT":"00000000-0000-0078-ffff-ffff00000041"},{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0078-ffff-ffff00000043","ELEMENT":"00000000-0000-0078-ffff-ffff00000043"},{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0078-ffff-ffff0000004a","ELEMENT":"00000000-0000-0078-ffff-ffff0000004a"},{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0078-ffff-ffff0000004e","ELEMENT":"00000000-0000-0078-ffff-ffff0000004e"},{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0078-ffff-ffff00000011","ELEMENT":"00000000-0000-0078-ffff-ffff00000011"}]} | headers=HTTPHeaderDict({'Server': 'nginx', 'Date': 'Fri, 23 Jan 2026 08:24:54 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '2059', 'Connection': 'keep-alive', 'Source-From': '02', 'x-powered-by': 'Express', 'vary': 'X-HTTP-Method-Override', 'etag': 'W/"80b-IJNEZiW2cGfO4iwRIJ0c2j9xGrQ"'})`,
+      level: 'DEBUG',
+      test_run_uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7'
+    }
+  ]
+} to 5780:0
+2026-01-23T08:24:56.818Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.1.0',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2026-01-23T08:24:54.674Z',
+      uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+      kind: 'TEST_LOG',
+      message: 'Finished Request',
+      level: 'DEBUG',
+      test_run_uuid: '3205ee69-3ea2-4fcf-baed-f137411ad2f7'
+    }
+  ]
+} to 5780:0
+2026-01-23T08:24:56.823Z CLI info [testhub:request-queue-handler]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Added the event {
+  event_type: 'HookRunFinished',
+  hook_run: {
+    type: 'hook',
+    hook_type: 'AFTER_EACH',
+    framework: 'pytest',
+    uuid: '9529d11e-5bac-4e8c-9fae-1c7f98d0999e',
+    name: 'teardown',
+    result: 'passed',
+    test_run_id: '3205ee69-3ea2-4fcf-baed-f137411ad2f7',
+    body: { lang: 'python', code: null },
+    scope: 'test_example',
+    custom_metadata: {},
+    tags: [],
+    scopes: [ 'TestSample' ],
+    file_name: 'bstack_sample.py',
+    location: 'bstack_sample.py',
+    vc_filepath: 'bstack_sample.py',
+    started_at: '2026-01-23T08:24:55.368Z',
+    finished_at: '2026-01-23T08:24:56.818Z'
+  },
+  logs: []
+} to 5780:0
+2026-01-23T08:24:56.895Z CLI info  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  [PRODUCTION] Making GET request to https://api.browserstack.com
+2026-01-23T08:24:56.896Z CLI info  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2026-01-23T08:25:01.514Z CLI info  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  [PRODUCTION] Making PUT request to https://collector-observability.browserstack.com
+2026-01-23T08:25:02.927Z CLI info [testhub:module]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  stopBuild: hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl request={"finished_at":"2026-01-23T08:24:56.895Z","finished_metadata":[],"custom_metadata":null} response={"data":""}
+2026-01-23T08:25:02.930Z CLI info  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  [PRODUCTION] Making POST request to https://api.browserstack.com
+2026-01-23T08:25:03.790Z CLI info [TEST REPORTING AND ANALYTICS:module]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Visit https://automation.browserstack.com/builds/hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl to view build report, insights, and many more debugging information all at one place!
+2026-01-23T08:25:08.869Z CLI info [main]  [dilipk_JLRgqw]  [hdfaoptrgg0q9vntzzuioovztegq4y0rawdbtitl]  [6633d007-2494-45f0-b6fd-73cf43731271]  Received graceful signal termination, performing cleanup
